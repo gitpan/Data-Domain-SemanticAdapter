@@ -1,0 +1,19 @@
+---
+global:
+  name: Data-Domain-SemanticAdapter
+releases:
+  - author: 'Marcel Gruenauer <marcel@cpan.org>'
+    changes:
+      - original version
+      - 'Makefile.PL: fixed requirements'
+      - 'Data::Domain::SemanticAdapter::Test: complete rewrite as it is now a subclass of Data::Semantic::Test'
+      - "Data::Domain::SemanticAdapter: also inherit from Data::Inherited, new() gets every_list('OPTIONS')"
+      - updated MANIFEST
+      - deleted t/01_misc.t
+      - getting rid of the distinction between well-formedness and validity. Only validity remains
+      - 'Data::Domain::SemanticAdapter::Test: refactored is_valid(), is_invalid()'
+      - 'all classes: added documentation'
+      - updated t/perlcriticrc
+    date: 2007-11-21T18:21:50Z
+    tags: []
+    version: 0.01
